@@ -1,5 +1,5 @@
 const { ApolloServer } = require('apollo-server');
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // 1
 const typeDefs = `
@@ -44,9 +44,8 @@ const server = new ApolloServer({
 })
 
 server
- // .listen()
-  //.then(({ url }) =>
-   // console.log(`Server is running on ${url}`)
+  .listen(port)
+  .then(({ port }) =>
+  console.log(`Server is running on ${port}`)
    
- //);
- .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+ );
