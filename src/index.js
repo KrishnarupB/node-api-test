@@ -23,11 +23,11 @@ let links = [{
 // 2
 const resolvers = {
   Query: {
-    info: () => `This is the API of a Hackernews Clone`,
+    info: () => `This is the API of a Hackernews Clone krish`,
     // 2
     feed: () => links,
     
-  },
+  }, 
   // 3
   Link: {
     id: (parent) => parent.id,
