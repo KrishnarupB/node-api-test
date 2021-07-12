@@ -43,9 +43,16 @@ const server = new ApolloServer({
   resolvers,
 })
 
-server
-  .listen(port)
-  .then(({ port }) =>
-  console.log(`Server is running on ${port}`)
-   
- );
+//server
+ // .listen(port)
+ // .then (({ port }) =>
+  
+ // console.log (`Server is running on http://localhost:'+ ${port}));  
+
+ //.then ( port ) = {console.log (`Server is running on http://localhost:')}; 
+ 
+ server
+  .listen()
+  .then(({ url }) =>
+    console.log(`Server is running on ${url}`)
+  );
