@@ -1,5 +1,5 @@
 const { ApolloServer } = require('apollo-server');
-const port = process.env.PORT || 5000;
+//const port = process.env.PORT || 5000;
 
 // 1
 const typeDefs = `
