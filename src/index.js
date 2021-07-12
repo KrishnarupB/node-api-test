@@ -53,8 +53,8 @@ const server = new ApolloServer({
  
  server
   .listen(8080)
-  .then(({ url }) =>
+ /* .then(({ url }) =>
     console.log(`Server is running on ${url}`)
-  );
+  ); */
   
   
